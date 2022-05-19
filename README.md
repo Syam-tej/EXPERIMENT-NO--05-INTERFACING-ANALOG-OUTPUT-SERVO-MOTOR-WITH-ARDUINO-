@@ -67,8 +67,33 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+```
+ // C++ code
+//
+#include<Servo.h>
+Servo S1;
+void setup()
+{
+  S1.attach(9);
+}
+void loop()
+{
+ for(int i=0;i<=180;i+=1)
+  {
+    S1.write(i);
+    delay(15);
+  }
+  for(int i=180;i>=0;i-=1)
+  {
+    S1.write(i);
+    delay(15);
+  }
+}
+```
+### OUTPUT:
+![s1](https://user-images.githubusercontent.com/93427224/169292197-83f2efdb-52c7-42f6-9771-3d21a1a747af.png)
 
+![s2](https://user-images.githubusercontent.com/93427224/169292219-4d056756-bafc-45f9-9ccb-ea2b2ff32456.png)
 
 
 
